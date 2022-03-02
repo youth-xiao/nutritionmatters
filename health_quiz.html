@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:wght@800;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<h1 id="quizheader">Let's have a health quiz!</h1>
+
+		<nav
+			class="navbar sticky-top navbar-expand-lg navbar-light bg-light rounded"
+			style="background-color: #f8edeb"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="home_page.html">NUMA</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navmenu"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navmenu">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="home_page.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="health_quiz.html">Quiz</a>
+						</li>
+						<li>
+							<a class="nav-link" href="portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+
+					<form
+						action="https://www.reddit.com/search"
+						class="d-flex col-md-8 col-lg-6 col-xl-6 align-items-center"
+					>
+						<input
+							class="form-control me-2"
+							type="search"
+							name="q"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-success" type="submit">
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="questionnaire row mt-4">
+				<div class="col-xl-6 col-l-6 col-md-6">
+					<h3>Survey on Age</h3>
+					<form action="/ages">
+						<div class="form-check">
+							<p>
+								<input
+									class="form-check-input"
+									type="radio"
+									name="age"
+									id="0-12"
+									value="child"
+								/>
+								<label class="form-check-label" for="0-12"
+									>0-12 years old</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="radio"
+									name="age"
+									id="13-18"
+									value="adolescent"
+								/>
+								<label class="form-check-label" for="13-18"
+									>13-18 years old</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="radio"
+									name="age"
+									id="19-30"
+									value="youth"
+								/>
+								<label class="form-check-label" for="19-30"
+									>19-30 years old</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="radio"
+									name="age"
+									id="31-45"
+									value="adult"
+								/>
+								<label class="form-check-label" for="31-45"
+									>31-45 years old</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="radio"
+									name="age"
+									id="46-60"
+									value="mid-age"
+								/>
+								<label class="form-check-label" for="46-60"
+									>46-60 years old</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="radio"
+									name="age"
+									id="60-75"
+									value="senior"
+								/>
+								<label class="form-check-label" for="60-75"
+									>60-75 years old</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="radio"
+									name="age"
+									id="76+"
+									value="old"
+								/>
+								<label class="form-check-label" for="76+"
+									>76 years old or older</label
+								>
+							</p>
+						</div>
+						<button class="btn btn-outline-primary btn-sm">
+							Submit age range
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-arrow-up-circle"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+								/>
+							</svg>
+						</button>
+					</form>
+				</div>
+
+				<div class="col-l-6 col-md-6">
+					<h3>Daily Food Intake Survey</h3>
+					<form action="/food">
+						<div class="form-check">
+							<p>
+								<input
+									class="form-check-input"
+									type="checkbox"
+									name="vegetables"
+									id="vegetables"
+									checked
+								/>
+								<label class="form-check-label" for="vegetables">
+									I've had some vegetables today</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="checkbox"
+									name="milk_dairy"
+									id="milk_dairy"
+									checked
+								/>
+								<label class="form-check-label" for="milk_dairy">
+									I've had some milk & dairy today</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="checkbox"
+									name="poultry"
+									id="poultry"
+									checked
+								/>
+								<label class="form-check-label" for="poultry">
+									I've had poultry (chicken/pork/lamb) today</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="checkbox"
+									name="fruits"
+									id="fruits"
+									checked
+								/>
+								<label class="form-check-label" for="fruits">
+									I've had some fruits today</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="checkbox"
+									name="carbohydrate"
+									id="carbohydrate"
+									checked
+								/>
+								<label class="form-check-label" for="carbohydrate">
+									I've had some rice, bread or potatoes today</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="checkbox"
+									name="nuts"
+									id="nuts"
+									checked
+								/>
+								<label class="form-check-label" for="nuts">
+									I've had nuts (e.g. peanut, walnut) today</label
+								>
+							</p>
+							<p>
+								<input
+									class="form-check-input"
+									type="checkbox"
+									name="water"
+									id="water"
+									checked
+								/>
+								<label class="form-check-label" for="water">
+									I've drank sufficient amount of water today</label
+								>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="questionnaire">
+				<form action="/account">
+					<!-- "name" is crucial esp. when sending data in the form of url -->
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="username">Please enter your user name</label>
+							<input
+								class="form-control"
+								type="text"
+								name="username"
+								placeholder="username"
+								id="username"
+								minlength="8"
+								maxlength="25"
+							/>
+						</div>
+
+						<div class="form-group col-md-6">
+							<label for="password">Please enter your password</label>
+							<input
+								class="form-control"
+								type="password"
+								name="password"
+								placeholder="password"
+								id="password"
+							/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="height">Enter your height (meters)</label>
+							<input
+								class="form-control"
+								type="height"
+								name="height"
+								placeholder="Your height"
+								id="height"
+								required
+							/>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="weight">Enter your weight (pounds)</label>
+							<input
+								class="form-control"
+								type="weight"
+								name="weight"
+								placeholder="Your weight"
+								id="weight"
+								required
+							/>
+						</div>
+					</div>
+					<br />
+					<!-- specify the type as "button" so that it will not execute its default "submit" function -->
+					<button>
+						submit
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-arrow-up-circle"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+							/>
+						</svg>
+					</button>
+					<button type="button">just a button</button>
+				</form>
+			</div>
+
+			<div class="questionnaire">
+				<h3>Race/Ethnicity</h3>
+				<form action="/race">
+					<div class="form-group">
+						<label for="race"></label>
+						<select class="form-control" name="race" id="race-select">
+							<option value="">--Please choose an option</option>
+							<option value="Asian">Asian</option>
+							<option value="Black/African American">
+								Black/African American
+							</option>
+							<option value="American Indian/Alaska Native">
+								American Indian/Alaska Native
+							</option>
+							<option value="Native Hawaiian/Other Pacific Islander">
+								Native Hawaiian/Other Pacific Islander
+							</option>
+							<option value="White">White</option>
+						</select>
+						<br />
+						<button>
+							Submit race/ethnicity
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-arrow-up-circle"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+								/>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<br />
+		<footer>&copy; Xiaoyang Zou 2022</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

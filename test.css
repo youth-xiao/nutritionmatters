@@ -1,0 +1,25 @@
+@media (min-width: 576px) {
+	.columns {
+		column-count: 1;
+	}
+}
+@media (min-width: 768px) {
+	.columns {
+		column-count: 2;
+	}
+}
+@media (min-width: 992px) {
+	.columns {
+		column-count: 2;
+	}
+}
+@media (min-width: 1200px) {
+	.columns {
+		column-count: 2;
+	}
+}
+@media (min-width: 1400px) {
+	.columns {
+		column-count: 4;
+	}
+}

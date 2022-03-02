@@ -1,0 +1,343 @@
+html {
+	box-sizing: border-box;
+}
+
+h1 {
+	color: rgb(106, 155, 91);
+	text-align: center;
+	width: 85%;
+	font-weight: bolder;
+	letter-spacing: 0.5rem;
+	font-size: 3rem;
+	font-family: "Work Sans", sans-serif;
+}
+
+h2,
+h3 {
+	color: #7a79b4;
+	width: 80%;
+}
+
+a {
+	text-decoration: none;
+}
+
+svg {
+	font-size: 1rem;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	background-color: #d8e2dc;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: rgb(66, 64, 64);
+}
+
+button {
+	font-size: 0.8rem;
+	background-color: #ece4db;
+	border-radius: 15px;
+	padding: 0.6em 0.5em;
+	border: 2px solid #a5a58d;
+	color: rgb(99, 96, 96);
+	transition: color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+button:hover {
+	background-color: #8bb6b1;
+	color: #f2e8cf;
+	border-color: rgb(126, 192, 155);
+	box-shadow: 0 0.5em 0.5em -0.4em #606c38;
+	transform: translateY(-0.25em);
+	cursor: pointer;
+}
+
+p {
+	line-height: 1.5em;
+	text-align: left;
+}
+
+img {
+	border-radius: 2rem;
+	width: 90%;
+	display: block;
+	opacity: 0.8;
+	/* margin: 0 auto; */
+}
+
+#introduction {
+	padding: 20px 50px;
+}
+
+#introduction p {
+	font-size: 1.2rem;
+}
+
+#introduction container-md {
+	display: flex;
+}
+
+#intro-img {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	margin-left: 70px;
+	margin-top: 30px;
+}
+
+h2:hover {
+	color: #e99bb1;
+}
+
+nav a {
+	color: #6b6e40;
+	font-weight: bold;
+}
+
+nav {
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: #f8edeb;
+	opacity: 0.7;
+}
+
+nav ul {
+	max-width: 60%;
+	display: inline-flex;
+	flex: 1;
+	justify-content: space-evenly;
+}
+
+ul,
+li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	padding-bottom: 50px;
+}
+
+.questionnaire {
+	padding: 20px 30px 30px 30px;
+}
+
+#quizheader {
+	padding: 40px 40px;
+}
+
+.macronutr-img {
+	border-radius: 50%;
+	width: 10rem;
+	margin-bottom: 30px;
+	/* max-width: 100%; */
+	margin-top: 30px;
+}
+
+.macro-panel {
+	border-radius: 20px;
+	padding: 30px 40px;
+	margin: auto;
+	width: 100%;
+	/* max-width: 960px; */
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 1.5rem;
+	align-items: center;
+}
+
+.nutrition-description {
+	border-bottom: 1px solid #e1f1ff;
+}
+
+.nutrition-description:last-child {
+	border-bottom: none;
+}
+
+.nutrition-description h3 {
+	font-weight: 300;
+}
+
+.image-attribute {
+	margin-top: 20px;
+	text-align: left;
+	display: block;
+	color: gray;
+}
+
+.nutr-header {
+	color: #4086be;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+
+.macronutr-features {
+	margin: 50px 0 25px;
+	color: #164c79;
+}
+
+.macronutr-features-item {
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 15px 0;
+	display: block;
+}
+
+.learn-more-nutr {
+	display: block;
+	border: 1px solid #9dd1ff;
+	border-radius: 10px;
+	font-weight: 500;
+	color: #4a8ec5;
+	padding: 10px 30px;
+	text-decoration: none;
+	margin: 25px 0;
+	transition: 300ms, ease-in-out;
+}
+
+.learn-more-nutr:hover,
+.learn-more-nutr:focus {
+	background-color: #d8e2dc;
+	color: #2a9d8f;
+}
+
+.micronutrients blockquote {
+	padding-left: 2rem;
+	width: 60%;
+	font-size: 18px;
+	border-left: 3px solid rgb(177, 171, 171);
+}
+
+.micronutrients h3 {
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #607449;
+}
+
+.micronutrients h4 {
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #93ad75;
+}
+
+.micronutrients p {
+	font-weight: 300;
+	font-size: 1rem;
+	color: #9fa598;
+}
+
+.micronutrients li {
+	font-weight: 350;
+	font-size: 1rem;
+	color: #686b64;
+}
+
+.card {
+	margin-right: 15px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.card-body a {
+	color: #6a863c;
+}
+
+/* .card-body button {
+	position: absolute;
+	bottom: 0;
+} */
+
+.card-body button:hover {
+	background-color: #94bbb6;
+	border: none;
+}
+.card-body a:hover {
+	color: #f0f3ea;
+}
+
+.list-group {
+	margin: 0 12px;
+	border-radius: 8px;
+}
+
+.card img {
+	margin-top: 10px;
+	border-radius: 8px;
+}
+
+.card button {
+	padding: 10px;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 1000px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	nav,
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 576px) {
+	h1 {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.macro-panel {
+		flex-direction: row;
+	}
+
+	.nutrition-description {
+		border-bottom: none;
+		border-right: 1px solid #e1f1ff;
+		padding: 25px 50px;
+	}
+	.nutrition-description:last-child {
+		border-right: none;
+	}
+}
+
+/* @media (min-width: 576px) {
+	.columns {
+		column-count: 1;
+		display: inline-block;
+	}
+}
+@media (min-width: 768px) {
+	.columns {
+		column-count: 2;
+		display: inline-block;
+	}
+}
+@media (min-width: 992px) {
+	.columns {
+		column-count: 2;
+		display: inline-block;
+	}
+}
+@media (min-width: 1200px) {
+	.columns {
+		column-count: 2;
+		display: inline-block;
+	}
+}
+@media (min-width: 1400px) {
+	.columns {
+		column-count: 4;
+		display: inline-block;
+	}
+} */
